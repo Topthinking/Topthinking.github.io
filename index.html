@@ -58,10 +58,32 @@
 
 
   
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
+
+
 
 
 <header id="allheader" class="site-header" role="banner" 
-   >
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -108,6 +130,322 @@
         
           <section id="main">
   
+    <article id="post-my/code-life"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2021/05/25/my/code-life/">代码人生</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2021/05/25/my/code-life/" class="article-date">
+	  <time datetime="2021-05-24T16:16:20.457Z" itemprop="datePublished">五月 25, 2021</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/my/">my</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>经过我多年的开发经验，对于所有程序语言的学习，我觉得无非都要经过如下三个阶段</p>
+</blockquote>
+<h1 id="Code-（源码）"><a href="#Code-（源码）" class="headerlink" title="Code （源码）"></a>Code （源码）</h1><p>需要对该编程语言的语法、规则、原理了然于心。</p>
+<p>熟练编写优雅的功能，深入理解该编程语言在业务使用上的优势和劣势</p>
+<p>可以根据实际情况，选择合适的框架和程序来实现功能</p>
+<p>能深入该编程语言的底层设计思想，理解该语言创造者的目的，能对该语言或相关框架提出相应的改进建议</p>
+<h1 id="Compile（编译）"><a href="#Compile（编译）" class="headerlink" title="Compile（编译）"></a>Compile（编译）</h1><p>理解编译原理，思考为什么源码需要通过编译</p>
+<p>有哪些语言不需要编译即可运行，其存在的优势，以及和编译型语言的对比</p>
+<p>深入认识该语言编译前后的代码对比，了解到为什么需要编译器，思考自己如何实现一个编译器</p>
+<h1 id="Runtime-（运行）"><a href="#Runtime-（运行）" class="headerlink" title="Runtime （运行）"></a>Runtime （运行）</h1><p>清楚的知道，代码在运行时，上下文状态和数据</p>
+<p>有哪些公共能力，代码在真正运行时，会遇到哪些问题，怎么去解决和捕获这些问题</p>
+<p>以及思考为什么会出现这些问题，看看能否在<code>Code</code>层或者<code>Compile</code>层规避掉</p>
+<p>思考：程序运行时，有哪些黑盒，需要去挖掘出这些黑盒的本质，才能提升性能和体验</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/my/">my</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9D%82%E8%B0%88/" rel="tag">杂谈</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-fund"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2021/05/10/fund/">基金净值期望计算公式</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2021/05/10/fund/" class="article-date">
+	  <time datetime="2021-05-10T08:33:17.121Z" itemprop="datePublished">五月 10, 2021</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/my/">my</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>$$<br>\gamma = \frac{∆\alpha}{∆\beta} -1<br>$$</p>
+<ul>
+<li>$\gamma$ <strong>购买力期望系数</strong></li>
+<li>$∆\alpha$ <strong>已经购买的净值</strong> $-$ <strong>当天收盘净值</strong></li>
+<li>$∆\beta$ <strong>期望达到的净值</strong> $-$ <strong>当天收盘净值</strong><br>$$<br>N = \gamma * M<br>$$</li>
+<li>$N$ <strong>购买的份额数</strong></li>
+<li>$M$ <strong>已购买的基金份额</strong></li>
+</ul>
+<p>$$<br>C = N * p<br>$$</p>
+<ul>
+<li>$C$ <strong>需要投入的资金</strong></li>
+<li>$p$ <strong>购买时当天收盘净值</strong></li>
+</ul>
+<blockquote>
+<ol>
+<li>当$lim_{∆\beta \to 0}$时，$N$的值将趋于$\infty$，$C$ 也将趋于$\infty$</li>
+<li>当$lim_{\frac{∆\alpha}{∆\beta}\to 1}$时，$lim_{\gamma \to 0}$，$C$ 将趋于 $0$</li>
+</ol>
+<p>✅ 坚持低位定投，当$C$为负数时，将开始获得收益</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/my/">my</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9D%82%E8%B0%88/" rel="tag">杂谈</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-router-in-iframe"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2021/03/27/router-in-iframe/">在iframe里面使用react-router</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2021/03/27/router-in-iframe/" class="article-date">
+	  <time datetime="2021-03-27T10:54:06.091Z" itemprop="datePublished">三月 27, 2021</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/web/">web</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>iframe里面嵌入一个基于HTML5 history的现代网站，如果需要调用最顶层的浏览器路由（即路由地址体现在地址栏，而不是在iframe内的沙箱中）</p>
+<p>那么该嵌入的代码就需要添加如下逻辑，去调用父容器的浏览器地址逻辑，这样页面的路由切换也将在浏览器的地址栏有所展示</p>
+<p>否则，在iframe嵌入单页应用的页面时，在单页路由切换时，浏览器的地址栏不会发生任何变化，会导致页面刷新后，无法正常定位网页内容</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; history <span class="keyword">as</span> RouterHistory &#125; <span class="keyword">from</span> <span class="string">&#x27;award-router&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; createLocation &#125; <span class="keyword">from</span> <span class="string">&#x27;history&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">hasBasename</span>(<span class="params">path, prefix</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    path.toLowerCase().indexOf(prefix.toLowerCase()) === <span class="number">0</span> &amp;&amp;</span><br><span class="line">    <span class="string">&#x27;/?#&#x27;</span>.indexOf(path.charAt(prefix.length)) !== <span class="number">-1</span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">stripBasename</span>(<span class="params">path, prefix</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> hasBasename(path, prefix) ? path.substr(prefix.length) : path;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 路由系统全部交给parent管理</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="keyword">let</span> parentHistory = <span class="built_in">window</span>.parent.history;</span><br><span class="line"><span class="keyword">let</span> localReplaceState = history.replaceState;</span><br><span class="line">history.pushState = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// console.log(&#x27;pushState&#x27;, arguments);</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">arguments</span>[<span class="number">0</span>] &amp;&amp; <span class="built_in">arguments</span>[<span class="number">0</span>].state === <span class="string">&#x27;null&#x27;</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    parentHistory.pushState.apply(parentHistory, <span class="built_in">arguments</span>);</span><br><span class="line">    localReplaceState.apply(history, <span class="built_in">arguments</span>);</span><br><span class="line">&#125;;</span><br><span class="line">history.replaceState = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// console.log(&#x27;replaceState&#x27;, arguments);</span></span><br><span class="line">    parentHistory.replaceState.apply(parentHistory, <span class="built_in">arguments</span>);</span><br><span class="line">    localReplaceState.apply(history, <span class="built_in">arguments</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">window</span>.parent.addEventListener(<span class="string">&#x27;popstate&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 这里其实路由已经发生变化了，只是react-router的组件没有按照正确的渲染，这里就是要让他进行渲染</span></span><br><span class="line">    <span class="keyword">let</span> _ref = e.state || &#123;&#125;;</span><br><span class="line">    <span class="keyword">let</span> key = _ref.key;</span><br><span class="line">    <span class="keyword">let</span> state = _ref.state;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> _window$location = <span class="built_in">window</span>.parent.location;</span><br><span class="line">    <span class="keyword">let</span> pathname = _window$location.pathname;</span><br><span class="line">    <span class="keyword">let</span> search = _window$location.search;</span><br><span class="line">    <span class="keyword">let</span> hash = _window$location.hash;</span><br><span class="line">    <span class="keyword">let</span> path = pathname + search + hash;</span><br><span class="line">    path = stripBasename(path, <span class="string">&#x27;/gatekeeper/lego&#x27;</span>);</span><br><span class="line">    <span class="keyword">const</span> location = createLocation(path, state, key);</span><br><span class="line">    localReplaceState.apply(history, [<span class="string">&#x27;&#x27;</span>, <span class="string">&#x27;&#x27;</span>, location.pathname + location.search]);</span><br><span class="line">    RouterHistory.push(&#123;</span><br><span class="line">        pathname: location.pathname,</span><br><span class="line">        search: location.search,</span><br><span class="line">        state: <span class="string">&#x27;null&#x27;</span></span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/web/">web</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-webpack"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2021/01/14/webpack/">webpack细节</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2021/01/14/webpack/" class="article-date">
+	  <time datetime="2021-01-14T03:20:23.401Z" itemprop="datePublished">一月 14, 2021</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/webpack/">webpack</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><blockquote>
+<p>module、chunk、bundle</p>
+</blockquote>
+<ul>
+<li><p><strong>module</strong>：就是js的模块化webpack支持CommonJS、ES6等模块化规范，简单来说就是你通过import语句引入的代码</p>
+</li>
+<li><p><strong>chunk</strong>：是webpack根据功能拆分出来的，包含三种情况：</p>
+<ul>
+<li>你的项目入口（entry）</li>
+<li>通过<code>import()</code>动态引入的代码</li>
+<li>通过<code>splitChunks</code>拆分出来的代码</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>chunk包含module，可能是一对多，也可能是一对一</p>
+</blockquote>
+<ul>
+<li><strong>bundle</strong>：是webpack打包之后的各个文件，一般就是和chunk是一对一的关系，bundle就是对chunk进行编译压缩打包等处理之后的产物</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/152097785">Webpack之SplitChunks插件用法详解：https://zhuanlan.zhihu.com/p/152097785</a></p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/webpack/">webpack</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-go/mongo"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2020/12/25/go/mongo/">go语言之mongo-db操作</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2020/12/25/go/mongo/" class="article-date">
+	  <time datetime="2020-12-25T08:00:31.261Z" itemprop="datePublished">十二月 25, 2020</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/go/">go</a>, <a class="article-category-link" href="/categories/go/mongo/">mongo</a>
+ 
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>主要罗列出使用go语言操作mongo的一些细节和注意事项</p>
+<p>基于<code>go.mongodb.org/mongo-driver</code></p>
+</blockquote>
+<h2 id="连接mongo-db"><a href="#连接mongo-db" class="headerlink" title="连接mongo-db"></a>连接mongo-db</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">&quot;context&quot;</span></span><br><span class="line">    <span class="string">&quot;fmt&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="string">&quot;go.mongodb.org/mongo-driver/mongo&quot;</span></span><br><span class="line">    <span class="string">&quot;go.mongodb.org/mongo-driver/mongo/options&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Db mongo</span></span><br><span class="line"><span class="keyword">var</span> Db *mongo.Client</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="comment">// 设置客户端连接配置</span></span><br><span class="line">    clientOptions := options.Client().ApplyURI(<span class="string">&quot;mongodb://192.168.41.11:6300&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 连接到MongoDB</span></span><br><span class="line">    client, err := mongo.Connect(context.TODO(), clientOptions)</span><br><span class="line">    <span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">        <span class="built_in">panic</span>(<span class="string">&quot;mongodb创建失败&quot;</span> + err.Error())</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 检查连接</span></span><br><span class="line">    err = client.Ping(context.TODO(), <span class="literal">nil</span>)</span><br><span class="line">    <span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">        <span class="built_in">panic</span>(<span class="string">&quot;mongodb连接失败&quot;</span> + err.Error())</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Db = client</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/go/">go</a>, <a class="article-category-link" href="/categories/go/mongo/">mongo</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-tips"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -116,7 +454,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2020/12/16/tips/">小知识</a>
+      <a class="article-title" href="/2020/12/17/tips/">小知识</a>
     </h1>
   
 
@@ -124,13 +462,13 @@
     
     <div class="article-meta">
       
-	<a href="/2020/12/16/tips/" class="article-date">
-	  <time datetime="2020-12-16T15:23:30.578Z" itemprop="datePublished">十二月 16, 2020</time>
+	<a href="/2020/12/17/tips/" class="article-date">
+	  <time datetime="2020-12-17T02:20:08.710Z" itemprop="datePublished">十二月 17, 2020</time>
 	</a>
 
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a>
+    <a class="article-category-link" href="/categories/web/">web</a>
  
       
     </div>
@@ -163,17 +501,25 @@
 </blockquote>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 直接看代码</span></span><br><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">&quot;fmt&quot;</span></span><br><span class="line">    <span class="string">&quot;strconv&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> a = <span class="string">`10,12,13,14,1,2,3`</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line"></span><br><span class="line">    d := []<span class="keyword">byte</span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(a) != <span class="number">0</span> &#123;</span><br><span class="line">        lv := <span class="string">&quot;&quot;</span></span><br><span class="line">        <span class="keyword">for</span> _, v := <span class="keyword">range</span> a &#123;</span><br><span class="line">            <span class="keyword">if</span> v == <span class="number">44</span> &#123;</span><br><span class="line">                s, _ := strconv.Atoi(lv)</span><br><span class="line">                d = <span class="built_in">append</span>(d, <span class="keyword">uint8</span>(s))</span><br><span class="line">                lv = <span class="string">&quot;&quot;</span></span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            &#125;</span><br><span class="line">            lv = lv + <span class="keyword">string</span>(v)</span><br><span class="line">        &#125;</span><br><span class="line">        s, _ := strconv.Atoi(lv)</span><br><span class="line">        d = <span class="built_in">append</span>(d, <span class="keyword">uint8</span>(s))</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    fmt.Println(d)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h2 id="部署pgadmin"><a href="#部署pgadmin" class="headerlink" title="部署pgadmin"></a>部署pgadmin</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name pgadmin -p 5080:80  -e &#x27;PGADMIN_DEFAULT_EMAIL=topthinking@test.com&#x27; -e &#x27;PGADMIN_DEFAULT_PASSWORD=123456&#x27; -e &#x27;PGADMIN_CONFIG_ENHANCED_COOKIE_PROTECTION=True&#x27; -e &#x27;PGADMIN_CONFIG_LOGIN_BANNER=&quot;Authorised users only!&quot;&#x27; -e &#x27;PGADMIN_CONFIG_CONSOLE_LOG_LEVEL=10&#x27; -d dpage/pgadmin4:latest</span><br></pre></td></tr></table></figure>
 
+<h2 id="docker镜像加速"><a href="#docker镜像加速" class="headerlink" title="docker镜像加速"></a>docker镜像加速</h2><ul>
+<li><p>下载安装docker服务 <a target="_blank" rel="noopener" href="https://hub.docker.com/editions/community/docker-ce-desktop-mac">https://hub.docker.com/editions/community/docker-ce-desktop-mac</a></p>
+</li>
+<li><p>阿里容器镜像加速，需要登录阿里账户 <a target="_blank" rel="noopener" href="https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors">https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors</a></p>
+</li>
+</ul>
+<h2 id="正则匹配所有字符串（包括换行）"><a href="#正则匹配所有字符串（包括换行）" class="headerlink" title="正则匹配所有字符串（包括换行）"></a>正则匹配所有字符串（包括换行）</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> match = content.match(<span class="regexp">/&lt;body&gt;([\d\D]*)&lt;\/body&gt;/</span>)</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="entry-meta entry-footer">
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a>
+    <a class="article-category-link" href="/categories/web/">web</a>
 
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%80%BB%E7%BB%93/" rel="tag">总结</a></li></ul>
 
       
     </footer>
@@ -202,12 +548,12 @@
     <div class="article-meta">
       
 	<a href="/2020/12/16/cross-domain/" class="article-date">
-	  <time datetime="2020-12-16T15:23:30.577Z" itemprop="datePublished">十二月 16, 2020</time>
+	  <time datetime="2020-12-16T11:42:16.938Z" itemprop="datePublished">十二月 16, 2020</time>
 	</a>
 
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a>
+    <a class="article-category-link" href="/categories/web/">web</a>
  
       
     </div>
@@ -244,11 +590,11 @@
     <footer class="entry-meta entry-footer">
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a>
+    <a class="article-category-link" href="/categories/web/">web</a>
 
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%80%BB%E7%BB%93/" rel="tag">总结</a></li></ul>
 
       
     </footer>
@@ -268,7 +614,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2020/11/25/go/%E9%80%92%E5%BD%92%E6%95%B4%E7%90%86%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/">go语言实现递归，扁平转为树形，同时添加层级标识</a>
+      <a class="article-title" href="/2020/12/02/go/%E9%80%92%E5%BD%92%E6%95%B4%E7%90%86%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/">go语言实现递归，扁平转为树形，同时添加层级标识</a>
     </h1>
   
 
@@ -276,8 +622,8 @@
     
     <div class="article-meta">
       
-	<a href="/2020/11/25/go/%E9%80%92%E5%BD%92%E6%95%B4%E7%90%86%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/" class="article-date">
-	  <time datetime="2020-11-25T13:58:41.790Z" itemprop="datePublished">十一月 25, 2020</time>
+	<a href="/2020/12/02/go/%E9%80%92%E5%BD%92%E6%95%B4%E7%90%86%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/" class="article-date">
+	  <time datetime="2020-12-02T04:08:48.874Z" itemprop="datePublished">十二月 2, 2020</time>
 	</a>
 
       
@@ -309,7 +655,7 @@
 
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%80%92%E5%BD%92/" rel="tag">递归</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
 
       
     </footer>
@@ -329,7 +675,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2020/11/21/go/promise.all/">go实现类似Promise.all的功能</a>
+      <a class="article-title" href="/2020/11/20/go/promise.all/">go实现类似Promise.all的功能</a>
     </h1>
   
 
@@ -337,8 +683,8 @@
     
     <div class="article-meta">
       
-	<a href="/2020/11/21/go/promise.all/" class="article-date">
-	  <time datetime="2020-11-21T15:39:29.618Z" itemprop="datePublished">十一月 21, 2020</time>
+	<a href="/2020/11/20/go/promise.all/" class="article-date">
+	  <time datetime="2020-11-20T13:57:36.321Z" itemprop="datePublished">十一月 20, 2020</time>
 	</a>
 
       
@@ -378,64 +724,7 @@
 
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
-
-      
-    </footer>
-    <hr class="entry-footer-hr">
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-docker/dockerfile"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2020/11/17/docker/dockerfile/">dockerfile编写细节</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2020/11/17/docker/dockerfile/" class="article-date">
-	  <time datetime="2020-11-17T14:17:41.419Z" itemprop="datePublished">十一月 17, 2020</time>
-	</a>
-
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/docker/">docker</a>
- 
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="编译-部署"><a href="#编译-部署" class="headerlink" title="编译 + 部署"></a>编译 + 部署</h2><blockquote>
-<p>通常我们需要在一个指定的目标环境进行代码的编译，比如<code>nodejs12</code>、<code>golang:1.15</code>等环境</p>
-<p>那么我们就可以编写 dockerfile 来实现</p>
-</blockquote>
-<p><strong>前提：一个 dockerfile 有且只有一个基础镜像，比如在生产环境运行时，其实不需要大而全的 nodejs 包，只需要一个小而美的即可</strong></p>
-<p><img src="/assets/images/post_imgs/node12.19.0.png" alt="node:12.19.0，基础镜像300多M"><br><img src="/assets/images/post_imgs/node12.19.0-alpine.png" alt="node:12.19.0-alpine，基础镜像不到30M"></p>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 使用node:12.19.0镜像编译源代码</span></span><br><span class="line"><span class="keyword">FROM</span> node:<span class="number">12.19</span>.<span class="number">0</span> AS build</span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> /code</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">COPY</span><span class="bash"> . .</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖，将TS代码编译为ES5代码</span></span><br><span class="line"><span class="comment"># 导出到当前目录 dist</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> yarn</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> yarn build</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 只安装生产环境运行需要的依赖</span></span><br><span class="line"><span class="comment"># 比如类似TypeScript、webpack、babel等依赖就不必安装了，减少目标镜像的体积</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> rm -rf node_modules</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> yarn install --production</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用最小的node镜像运行node服务</span></span><br><span class="line"><span class="keyword">FROM</span> node:<span class="number">12.19</span>.<span class="number">0</span>-alpine</span><br><span class="line"></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> /code</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 拷贝编译后的资源到当前镜像内</span></span><br><span class="line"><span class="keyword">COPY</span><span class="bash"> --from=build /code/dist /code/server</span></span><br><span class="line"><span class="keyword">COPY</span><span class="bash"> --from=build /code/node_modules /code/node_modules</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> [<span class="string">&quot;node&quot;</span>, <span class="string">&quot;server&quot;</span>]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/docker/">docker</a>
-
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a></li></ul>
 
       
     </footer>
@@ -455,7 +744,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2020/11/17/secret/">加密技术漫谈</a>
+      <a class="article-title" href="/2020/11/20/secret/">加密技术漫谈</a>
     </h1>
   
 
@@ -463,95 +752,34 @@
     
     <div class="article-meta">
       
-	<a href="/2020/11/17/secret/" class="article-date">
-	  <time datetime="2020-11-17T14:13:03.469Z" itemprop="datePublished">十一月 17, 2020</time>
+	<a href="/2020/11/20/secret/" class="article-date">
+	  <time datetime="2020-11-20T13:56:48.232Z" itemprop="datePublished">十一月 20, 2020</time>
 	</a>
 
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/%E5%AE%89%E5%85%A8/">安全</a>
+    <a class="article-category-link" href="/categories/web/">web</a>
  
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/%E5%AE%89%E5%85%A8/">安全</a>
-
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
-
-      
-    </footer>
-    <hr class="entry-footer-hr">
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-top"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2020/08/11/top/">职业闲谈</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2020/08/11/top/" class="article-date">
-	  <time datetime="2020-08-11T15:48:15.296Z" itemprop="datePublished">八月 11, 2020</time>
-	</a>
-
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
- 
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="硬实力"><a href="#硬实力" class="headerlink" title="硬实力"></a>硬实力</h2><ul>
-<li>数据结构和算法（leetcode）</li>
-<li>设计模式</li>
-<li>前端MDN文档</li>
-<li>react源码（diff算法、调度算法等）</li>
-<li>nodejs底层执行逻辑（v8）</li>
-<li>云技术（docker，k8s，serverless）</li>
-<li>3D技术（VR、AR）</li>
-<li>webassembly（go、rust等底层语言）</li>
-<li>研究面向5G的商用技术</li>
-</ul>
-<h2 id="软实力"><a href="#软实力" class="headerlink" title="软实力"></a>软实力</h2><ul>
-<li>思考问题的方式，多场景换位思考</li>
-<li>商业价值和技术变现</li>
-<li>英语</li>
-</ul>
+        <blockquote>
+<p>这里主要谈两块加密技术的应用</p>
+<p>即非对称加密（RSA）和对称加密（AES）</p>
+<p>我们可以将两种加密技术配合使用，可以帮助我们加密传输大文件</p>
+</blockquote>
 
       
     </div>
     <footer class="entry-meta entry-footer">
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
+    <a class="article-category-link" href="/categories/web/">web</a>
 
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%81%8C%E4%B8%9A/" rel="tag">职业</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AE%89%E5%85%A8/" rel="tag">安全</a></li></ul>
 
       
     </footer>
@@ -564,6 +792,11 @@
 
   
 
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+  </nav>
 
 </section>
           <aside id="sidebar">
@@ -655,8 +888,8 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2020/12/16/tips/">小知识</a></h6>
-              <span>十二月 16, 2020</span>
+              <h6 style="margin: 0;"><a href="/2021/05/25/my/code-life/">代码人生</a></h6>
+              <span>五月 25, 2021</span>
             </div>
 
           </li>
@@ -667,8 +900,8 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2020/12/16/cross-domain/">跨域漫谈</a></h6>
-              <span>十二月 16, 2020</span>
+              <h6 style="margin: 0;"><a href="/2021/05/10/fund/">基金净值期望计算公式</a></h6>
+              <span>五月 10, 2021</span>
             </div>
 
           </li>
@@ -679,8 +912,8 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2020/11/25/go/%E9%80%92%E5%BD%92%E6%95%B4%E7%90%86%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/">go语言实现递归，扁平转为树形，同时添加层级标识</a></h6>
-              <span>十一月 25, 2020</span>
+              <h6 style="margin: 0;"><a href="/2021/03/27/router-in-iframe/">在iframe里面使用react-router</a></h6>
+              <span>三月 27, 2021</span>
             </div>
 
           </li>
@@ -691,8 +924,8 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2020/11/21/go/promise.all/">go实现类似Promise.all的功能</a></h6>
-              <span>十一月 21, 2020</span>
+              <h6 style="margin: 0;"><a href="/2021/01/14/webpack/">webpack细节</a></h6>
+              <span>一月 14, 2021</span>
             </div>
 
           </li>
@@ -703,8 +936,8 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2020/11/17/docker/dockerfile/">dockerfile编写细节</a></h6>
-              <span>十一月 17, 2020</span>
+              <h6 style="margin: 0;"><a href="/2020/12/25/go/mongo/">go语言之mongo-db操作</a></h6>
+              <span>十二月 25, 2020</span>
             </div>
 
           </li>
@@ -715,8 +948,8 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2020/11/17/secret/">加密技术漫谈</a></h6>
-              <span>十一月 17, 2020</span>
+              <h6 style="margin: 0;"><a href="/2020/12/17/tips/">小知识</a></h6>
+              <span>十二月 17, 2020</span>
             </div>
 
           </li>
@@ -730,7 +963,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/">go</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AE%89%E5%85%A8/">安全</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BC%80%E5%8F%91/">开发</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/">go</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/go/mongo/">mongo</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/my/">my</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/web/">web</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/webpack/">webpack</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -740,7 +973,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%81%8C%E4%B8%9A/" rel="tag">职业</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%80%92%E5%BD%92/" rel="tag">递归</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%89%E5%85%A8/" rel="tag">安全</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%BB%E7%BB%93/" rel="tag">总结</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E8%B0%88/" rel="tag">杂谈</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -750,7 +983,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 10px;">算法</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 20px;">编程</a> <a href="/tags/%E8%81%8C%E4%B8%9A/" style="font-size: 10px;">职业</a> <a href="/tags/%E9%80%92%E5%BD%92/" style="font-size: 10px;">递归</a>
+      <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 13.33px;">前端</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 20px;">后端</a> <a href="/tags/%E5%AE%89%E5%85%A8/" style="font-size: 10px;">安全</a> <a href="/tags/%E6%80%BB%E7%BB%93/" style="font-size: 13.33px;">总结</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 16.67px;">杂谈</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 10px;">算法</a>
     </div>
   </div>
 
@@ -760,7 +993,7 @@
     <h3 class="widget-title">归档</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">三月 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">一月 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">十一月 2020</a><span class="archive-list-count">4</span></li></ul>
     </div>
   </div>
 
@@ -789,7 +1022,7 @@
 
   <div class="clearfix container">
       <div class="site-info">
-	      &copy; 2020 Topthinking All Rights Reserved.
+	      &copy; 2021 Topthinking All Rights Reserved.
         
       </div>
   </div>
@@ -807,6 +1040,9 @@
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
     
 </script>
